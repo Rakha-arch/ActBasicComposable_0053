@@ -58,7 +58,11 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
             )
 
             // Teks sub-judul
-
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                color = Color.Black
+            )
 
             Spacer(modifier = Modifier.height(24.dp))
 
