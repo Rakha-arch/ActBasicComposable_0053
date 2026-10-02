@@ -40,7 +40,13 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
         )
 
         // 2. Column Utama untuk menyusun komponen secara vertikal di tengah/atas
-         {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Top
+        ) {
             Spacer(modifier = Modifier.height(20.dp))
 
             // Teks "Login"
