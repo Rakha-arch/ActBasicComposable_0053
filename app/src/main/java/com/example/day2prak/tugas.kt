@@ -25,7 +25,12 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
     ) {
         // Background Image (Opsional jika ingin background foto masjid/arsitektur seperti gambar)
         // Jika tidak ada background khusus, bisa diisi warna putih/transparan atau gambar masjid
-
+        Image(
+            painter = painterResource(id = R.drawable.foto), // Ganti dengan background foto jika ada
+            contentDescription = "Background",
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
+        )
 
         // Lapisan transparan putih/abu-abu tipis agar teks lebih terbaca di atas background foto
         Box(
