@@ -68,7 +68,14 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
 
             // Logo Universitas Muhammadiyah Yogyakarta (Bulat)
             // Pastikan kamu punya drawable logo UMY, misal R.drawable.logo_umy
-
+            Image(
+                painter = painterResource(id = R.drawable.umy), // Ganti dengan R.drawable.logo_umy
+                contentDescription = "Logo UMY",
+                modifier = Modifier
+                    .size(100.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
 
             Spacer(modifier = Modifier.height(16.dp))
 
