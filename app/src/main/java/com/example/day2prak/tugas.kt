@@ -107,7 +107,7 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
 
             // Foto Profil / Foto Lingkaran Besar di Bagian Bawah
             Image(
-                painter = painterResource(id = R.drawable.ppp), // Ganti dengan foto kamu
+                painter = painterResource(id = R.drawable.n), // Ganti dengan foto kamu
                 contentDescription = "Foto Profil Besar",
                 modifier = Modifier
                     .size(200.dp)
