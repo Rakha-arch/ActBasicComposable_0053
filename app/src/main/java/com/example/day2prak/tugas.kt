@@ -69,7 +69,7 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
             // Logo Universitas Muhammadiyah Yogyakarta (Bulat)
             // Pastikan kamu punya drawable logo UMY, misal R.drawable.logo_umy
             Image(
-                painter = painterResource(id = R.drawable.umy), // Ganti dengan R.drawable.logo_umy
+                painter = painterResource(id = R.drawable.logoumy), // Ganti dengan R.drawable.logo_umy
                 contentDescription = "Logo UMY",
                 modifier = Modifier
                     .size(100.dp)
@@ -106,7 +106,14 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(24.dp))
 
             // Foto Profil / Foto Lingkaran Besar di Bagian Bawah
-
+            Image(
+                painter = painterResource(id = R.drawable.pp), // Ganti dengan foto kamu
+                contentDescription = "Foto Profil Besar",
+                modifier = Modifier
+                    .size(200.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
         }
     }
 }
