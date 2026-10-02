@@ -50,7 +50,12 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(20.dp))
 
             // Teks "Login"
-
+            Text(
+                text = "Login",
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
 
             // Teks sub-judul
 
