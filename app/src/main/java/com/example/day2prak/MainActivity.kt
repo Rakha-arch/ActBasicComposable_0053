@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
             Day2prakTheme{
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     // Memanggil Layout standar dengan padding dari Scaffold
-                    TataletakBoxColumnRow(
+                    TugasPraktikumLayout(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

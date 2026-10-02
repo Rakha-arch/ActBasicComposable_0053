@@ -1,0 +1,70 @@
+package com.example.day2prak
+
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+
+@Composable
+fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
+    // 1. Box paling luar untuk menampung Background Fullscreen dan konten di atasnya
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+    ) {
+        // Background Image (Opsional jika ingin background foto masjid/arsitektur seperti gambar)
+        // Jika tidak ada background khusus, bisa diisi warna putih/transparan atau gambar masjid
+
+
+        // Lapisan transparan putih/abu-abu tipis agar teks lebih terbaca di atas background foto
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.White.copy(alpha = 0.75f))
+        )
+
+        // 2. Column Utama untuk menyusun komponen secara vertikal di tengah/atas
+         {
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Teks "Login"
+
+
+            // Teks sub-judul
+
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            // Logo Universitas Muhammadiyah Yogyakarta (Bulat)
+            // Pastikan kamu punya drawable logo UMY, misal R.drawable.logo_umy
+
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Teks "Nama" (warna merah)
+
+
+            // Teks Nama Mahasiswa (warna biru)
+
+
+            // Teks NIM (warna hitam)
+
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            // Foto Profil / Foto Lingkaran Besar di Bagian Bawah
+
+        }
+    }
+}
