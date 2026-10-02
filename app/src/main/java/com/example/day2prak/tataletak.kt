@@ -53,7 +53,9 @@ fun TataletakBox(modifier: Modifier) {
             .fillMaxHeight()
             .fillMaxWidth(),
         contentAlignment = Alignment.Center
-    )
+    ) {
+        Text(text = "Box 1")
+    }
 }
 
 @Composable
