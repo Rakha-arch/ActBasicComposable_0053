@@ -80,13 +80,28 @@ fun TugasPraktikumLayout(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(16.dp))
 
             // Teks "Nama" (warna merah)
-
+            Text(
+                text = "Nama",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
 
             // Teks Nama Mahasiswa (warna biru)
-
+            Text(
+                text = "Rakha Miftahu Zahran",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
 
             // Teks NIM (warna hitam)
-
+            Text(
+                text = "20240140053",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
 
             Spacer(modifier = Modifier.height(24.dp))
 
